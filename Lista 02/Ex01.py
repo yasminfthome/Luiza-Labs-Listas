@@ -11,6 +11,7 @@ class Pessoa:
             return f"{self.nome} é maior de idade, portanto pode fumar"
         return f"{self.nome} é menor de idade, portanto não pode fumar"
 
+
 # Método de Herança
 class Fulano(Pessoa):
     def __init__(self, cpf, nome, idade, fumante) -> None:

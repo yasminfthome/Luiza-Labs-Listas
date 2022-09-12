@@ -12,7 +12,11 @@ class Professor:
             return self.__dados_privados()
         return "Você não tem acesso a está informação"
 
+    def teste(self):
+        return self.__dados_privados()
+
 
 usuario1 = Professor("Nicole", 22, 800)
+print(usuario1.teste())
 user1 = usuario1.confirmacao()
-print(user1)
+# print(user1)

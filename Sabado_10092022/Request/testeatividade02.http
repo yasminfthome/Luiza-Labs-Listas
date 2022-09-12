@@ -1,0 +1,5 @@
+##
+# Testar a API de cotação de dólar
+
+
+GET https://economia.awesomeapi.com.br:443/json/last/USD-BRL
