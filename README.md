@@ -7,7 +7,7 @@ Aqui se encontra todas as listas e exercícios realizados no projeto Luiza Code.
  2. [Porque participar?](#porque)
  3. [Oque está sendo ensinado?](#ensinado)
  4. [Resumo](#resumo)
- 5. [Pessoas Contribuidoras e Desenvolvedoras do Projeto](#contribuidoras)
+ 5. [Contribuidores deste Repositório](#contribuidoras)
 
 *******
 
@@ -45,7 +45,7 @@ Aqui está sendo desenvolvidas as seguintes competências:
 
 <div id='contribuidoras'/>
 
-## 5. Pessoas Contribuidoras e Desenvolvedoras do Projeto.
+## 5. Contribuidores deste Repositório.
 <br/>
 
 ###  **Nicole Maia**
