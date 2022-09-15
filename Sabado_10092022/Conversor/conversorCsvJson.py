@@ -8,16 +8,14 @@ def ler_arquivo_csv():
     # como: 'r' leR, 'w': escreWer.
     with open("musicas.csv", "r") as arq_csv:
         leitor_csv = DictReader(arq_csv)
-        registros = [
-            registro
-            for registro in leitor_csv
-        ]
+        registros = [registro for registro in leitor_csv]
         # registros = []
-        #for registro in registros:
+        # for registro in registros:
         #    registros.append(registro)
         print(registros)
     # Fim do bloco: arq_csv.close()
     return registros
+
 
 def salvar_arquivos_json(registros):
     with open("saida.json", "w") as arq_json:
@@ -27,6 +25,7 @@ def salvar_arquivos_json(registros):
 def principal():
     registros = ler_arquivo_csv()
     salvar_arquivos_json(registros)
+
 
 if __name__ == "__main__":
     principal()
