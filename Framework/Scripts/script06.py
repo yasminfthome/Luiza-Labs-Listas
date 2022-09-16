@@ -1,14 +1,16 @@
 def comissao_vendedor(valor):
     return valor + (valor * 0.1)
 
+
 def comissao_gerente(valor):
     return valor + (valor + 0.2)
+
 
 def calcular_comissao(valor, tipo_empregado):
     # Forma 1
     if tipo_empregado == "gerente":
         return comissao_gerente(valor)
-    #else
+    # else
     return comissao_vendedor(valor)
 
 
@@ -31,13 +33,13 @@ def calcular_comissao3(valor, tipo_empregado):
         # Chave / cargo /tipo-empregado
         tipo_empregado,
         # Tipo de empregado for deconhecido
-        comissao_vendedor
+        comissao_vendedor,
     )
     comissao = funcao_comissao(valor)
     return comissao
 
 
-tipo_empregado ="gerente"
+tipo_empregado = "gerente"
 valor = 1000
 
 comissao = calcular_comissao(valor, tipo_empregado)
