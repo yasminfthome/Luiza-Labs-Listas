@@ -1,0 +1,70 @@
+
+#########################################################
+###### ADICIONANDO NOVOS ELEMENTOS AOS BANCOS DE DADOS
+#########################################################
+
+########### Rota para adicionar usuarios
+POST http://127.0.0.1:8000/usuarios/ HTTP/1.1
+content-type: application/json
+
+{
+  "id_usuario": 1,
+  "nome": "nicole",
+  "email": "emaill@email.com",
+  "senha": "string",
+  "endereco": []
+}
+
+##################################################
+#### Rota para adicionar produtos
+POST http://127.0.0.1:8000/produtos/ HTTP/1.1
+content-type: application/json
+
+{
+    "id_produto": 71,
+    "nome": "pneu",
+    "descricao": "pneu bom",
+    "preco": 203.30
+
+}
+##################################################
+#### Rota para adicionar produtos ao carrinho do usuario
+#### e já calcula o valor total do carrinho
+POST http://127.0.0.1:8000/carrinhos/1/8/5 HTTP/1.1
+content-type: application/json
+
+#################################################
+###### ADICIONAR CARRINHO ASSOCIADO A UM USUARIO
+POST http://127.0.0.1:8000/carrinhos/ HTTP/1.1
+content-type: application/json
+
+{
+    "id_usuario": 1,
+    "produtos": [],
+    "preco_total": 0,
+    "quantidade_total": 0
+
+}
+
+#################################################
+###### ADICIONAR ENDERECO ASSOCIADO A UM USUARIO
+POST http://127.0.0.1:8000/usuarios/enderecos/ HTTP/1.1
+content-type: application/json
+
+{
+  "id_usuario": 1,
+  "id_endereco": 2,
+  "rua": "Rua fantasma",
+  "cep": "38038965",
+  "cidade": "cidade",
+  "estado": "estado"
+}
+
+
+
+
+
+
+
+
+

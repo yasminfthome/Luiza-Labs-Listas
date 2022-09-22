@@ -2,19 +2,15 @@
 // To disable this template go to Settings | MongoDB | Use Default Template For Playground.
 // Make sure you are connected to enable completions and to be able to run a playground.
 // Use Ctrl+Space inside a snippet or a string literal to trigger completions.
-
+// Métodos CRUD MongoDB
 
 // Parte que estava no slide.
 
-//const database = 'luiza_code'
-
-//use(database)   cria e/ou altera para o banco
-
-//db.createCollection("products"); //cria uma nova coleção
-
-//db.createCollection("clients"); //cria uma nova coleção
-
-//db.createCollection("wishlists"); //cria uma nova coleção
+const database = 'luiza_code'
+use(database)   //cria e/ou altera para o banco
+db.createCollection("products"); //cria uma nova coleção
+db.createCollection("clients"); //cria uma nova coleção
+db.createCollection("wishlists"); //cria uma nova coleção
 
 //db.nomedacollection.drop() //deleta uma coleção
 
@@ -85,7 +81,7 @@ Inseri varios campos na coleção:
     Resposta: 
     { '_id': 3, 'name': 'Luiza', 'email': 'luiza@gmail.com'}
 
-    Para indentá-lo facilitando uma melhor leitura podemos usar o método pretty.
+    Para indentá-lo facilitando para uma melhor leitura podemos usar o método pretty.
     
     >> db.clients.find().pretty()
 
@@ -339,7 +335,7 @@ $unset Remove o campo especificado de um documento
 // 4. Delete
     // As operações de exclusão removem documentos de uma coleção.
 
-    //Deleta tudo
+    //Deleta todos os campos chamados
     use('luiza_code');
     db.products.deleteMany(
         {_id: 107}
@@ -486,21 +482,24 @@ Usa $sum para calcular o pedido total quantity de cada pizza name. O total é ar
 
 
 // 6. Bônus (Index)
+/* Index é utilizado para definir uma chave de busca para auxiliar em uma buscar de uma maneira que não precise percorrer 
+todos os dados para encontrar o dado buscado.
+Pense que o index separa as categorias por blocos e dentro desses blocos existem os dados de uma determinada categoria.
+ */
+    // Utilizado para pesquisar
+    
     use('luiza_code');
     db.products.find(
         {name: "Notebook"}
-    ).explain();
+    ).explain();            //Comando explain é utilizado para explicar oque tem por de baixo dos panos
 
+
+//Criação de um index referente ao nome
 
     use('luiza_code');
     db.products.createIndex(
-        {name:1}
+        {name:1}                      //name = categoria ; 1 = true
     )
 
     use('luiza_code');
-    db.products.dropIndex("name_1");
-
-    use('luiza_code');
-    db.products.find(
-        {name: "Notebook"}
-    ).explain()
+    db.products.dropIndex("name_1");   //dropIndex deleta o index

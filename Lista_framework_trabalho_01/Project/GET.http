@@ -1,0 +1,50 @@
+####################################
+############ METODOS GET ###########
+####################################
+
+
+### Rota para buscar todos os usuarios
+GET http://127.0.0.1:8000/usuarios HTTP/1.1
+content-type: application/json
+
+########################################
+### Rota para buscar todos os produtos
+GET http://127.0.0.1:8000/produtos HTTP/1.1
+content-type: application/json
+
+
+########################################
+#### Rota para buscar todos os carrinhos
+GET http://127.0.0.1:8000/carrinhos HTTP/1.1
+content-type: application/json
+
+
+########################################
+######## CONSULTANDO USUARIOS PELO ID
+GET http://127.0.0.1:8000/usuarios/1 HTTP/1.1
+content-type: application/json
+
+########################################
+####### CONSULTANDO USUARIOS PELO NOME
+GET http://127.0.0.1:8000/usuarios/nicole/ HTTP/1.1
+content-type: application/json
+
+
+########################################
+####Ter na página raiz uma saudação de boas vindas.
+GET http://127.0.0.1:8000/ HTTP/1.1
+content-type: application/json
+
+
+
+########################################
+####Pesquisar pelo endereço do usuario
+GET http://127.0.0.1:8000/usuarios/enderecos/1/ HTTP/1.1
+content-type: application/json
+
+
+
+
+
+
+
