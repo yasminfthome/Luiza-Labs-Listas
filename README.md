@@ -52,10 +52,6 @@ Aqui está sendo desenvolvidas as seguintes competências:
 
 <br/>
 
-<a>
-<img src="https://media-exp1.licdn.com/dms/image/C4D22AQFbBhjh5Dp4lA/feedshare-shrink_800/0/1661381428598?e=1666224000&v=beta&t=UxThIEqjfutrfAtQaHuaIh17KdGkZI6AWu_IPM_tQLw" 
-  alt="Imagem Nicole Maia" width="280" height="280" />
-</a>
 
 * **[*Linkedin*] : https://www.linkedin.com/in/nicole-maia-bbb7aa17b/**
 * **[*GitHub*] : https://github.com/nickmaia**
